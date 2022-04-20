@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>連結試算表 - 表單Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 連結Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <!-- CSS 格式修改 -->
+    <style>
+        .container-contact {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            background-color: rgb(42, 165, 159);
+            width: 100%;
+        }
+        
+        .container-contact h3 {
+            font-size: 30px;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .btn {
+            width: 100%;
+            font-size: 20px;
+            margin: 20px 0px 20px 0px;
+            background-color: rgb(6, 117, 119);
+            color: rgb(255, 255, 255);
+            border-radius: 20px;
+            transition: 1s;
+        }
+        
+        .btn:hover {
+            background-color: rgb(178, 224, 84);
+            color: black;
+        }
+        
+        input {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-contact">
+        <h3>同住家人配合疫情調查名冊</h3>
+
+        <div class="row">
+            <!-- 第一欄位 -->
+            <div class="col-sm-2">
+
+            </div>
+            <!-- 第二欄位 -->
+            <div class="col-sm-8">
+                <form id="myForm">
+                    <div class="row">
+                        <!-- 第一個輸入 - 班級 -->
+                        <div class="col-sm-3 form-group">
+                            <input class="form-control" id="class1" name="class1" placeholder="班級(範例:101)" type="text" required>
+                        </div>
+                        <!-- 第二個輸入 - 座號 -->
+                        <div class="col-sm-3 form-group">
+                            <input class="form-control" id="no" name="no" placeholder="座號" type="text" required>
+                        </div>
+                        <!-- 第三個輸入 - 姓名 -->
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="姓名" type="text" required>
+                        </div>
+                    </div>
+                    <br>
+                    <h5>同住家人1</h5>
+                    <div class="row">
+                        <!-- 第一個輸入 - 身份 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d11" name="d11" placeholder="身份(例如：父親)" type="text" required>
+                        </div>
+                        <!-- 第二個輸入 - 姓名 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d12" name="d12" placeholder="姓名" type="text" required>
+                        </div>
+                        <!-- 第三個輸入 - 地址 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d13" name="d13" placeholder="地址" type="text" required>
+                        </div>
+                        <br>
+                        <!-- 第四個輸入 - 電話 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d14" name="d14" placeholder="電話" type="text" required>
+                        </div>
+                        <!-- 第五個輸入 - 生日 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d15" name="d15" placeholder="出生日期" type="text" required>
+                        </div>
+                        <!-- 第六個輸入 - 身份證字號 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d16" name="d16" placeholder="身份證字號" type="text" required>
+                        </div>                      
+                    </div>
+                    <br>
+                    <h5>同住家人2</h5>
+                    <div class="row">
+                        <!-- 第一個輸入 - 身份 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d21" name="d21" placeholder="身份(例如：父親)" type="text" required>
+                        </div>
+                        <!-- 第二個輸入 - 姓名 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d22" name="d22" placeholder="姓名" type="text" required>
+                        </div>
+                        <!-- 第三個輸入 - 地址 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d23" name="d23" placeholder="地址" type="text" required>
+                        </div>
+                        <br>
+                        <!-- 第四個輸入 - 電話 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d24" name="d24" placeholder="電話" type="text" required>
+                        </div>
+                        <!-- 第五個輸入 - 生日 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d25" name="d25" placeholder="出生日期" type="text" required>
+                        </div>
+                        <!-- 第六個輸入 - 身份證字號 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d26" name="d26" placeholder="身份證字號" type="text" required>
+                        </div>                      
+                    </div>
+                    <br>
+                    <h5>同住家人3</h5>
+                    <div class="row">
+                        <!-- 第一個輸入 - 身份 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d31" name="d31" placeholder="身份(例如：父親)" type="text" required>
+                        </div>
+                        <!-- 第二個輸入 - 姓名 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d32" name="d32" placeholder="姓名" type="text" required>
+                        </div>
+                        <!-- 第三個輸入 - 地址 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d33" name="d33" placeholder="地址" type="text" required>
+                        </div>
+                        <br>
+                        <!-- 第四個輸入 - 電話 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d34" name="d34" placeholder="電話" type="text" required>
+                        </div>
+                        <!-- 第五個輸入 - 生日 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d35" name="d35" placeholder="出生日期" type="text" required>
+                        </div>
+                        <!-- 第六個輸入 - 身份證字號 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d36" name="d36" placeholder="身份證字號" type="text" required>
+                        </div>                      
+                    </div>
+                    <br>
+                    <h5>同住家人4</h5>
+                    <div class="row">
+                        <!-- 第一個輸入 - 身份 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d41" name="d41" placeholder="身份(例如：父親)" type="text" required>
+                        </div>
+                        <!-- 第二個輸入 - 姓名 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d42" name="d42" placeholder="姓名" type="text" required>
+                        </div>
+                        <!-- 第三個輸入 - 地址 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d43" name="d43" placeholder="地址" type="text" required>
+                        </div>
+                        <br>
+                        <!-- 第四個輸入 - 電話 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d44" name="d44" placeholder="電話" type="text" required>
+                        </div>
+                        <!-- 第五個輸入 - 生日 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d45" name="d45" placeholder="出生日期" type="text" required>
+                        </div>
+                        <!-- 第六個輸入 - 身份證字號 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d46" name="d46" placeholder="身份證字號" type="text" required>
+                        </div>                      
+                    </div>
+                    <br>
+                    <h5>同住家人5</h5>
+                    <div class="row">
+                        <!-- 第一個輸入 - 身份 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d51" name="d51" placeholder="身份(例如：父親)" type="text" required>
+                        </div>
+                        <!-- 第二個輸入 - 姓名 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d52" name="d52" placeholder="姓名" type="text" required>
+                        </div>
+                        <!-- 第三個輸入 - 地址 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d53" name="d53" placeholder="地址" type="text" required>
+                        </div>
+                        <br>
+                        <!-- 第四個輸入 - 電話 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d54" name="d54" placeholder="電話" type="text" required>
+                        </div>
+                        <!-- 第五個輸入 - 生日 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d55" name="d55" placeholder="出生日期" type="text" required>
+                        </div>
+                        <!-- 第六個輸入 - 身份證字號 -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="d56" name="d56" placeholder="身份證字號" type="text" required>
+                        </div>                      
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button class="btn " type="submit" id="submitButton">送出Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- 第三欄位 -->
+            <div class="col-sm-2">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript程式 -->
+    <script>
+        // 抓輸入的值
+
+        function getValues() {
+
+            var class1 = document.getElementById("class1");
+            var no = document.getElementById("no");
+            var name = document.getElementById("name");
+            var d11 = document.getElementById("d11");
+            var d12 = document.getElementById("d12");
+            var d13 = document.getElementById("d13");
+            var d14 = document.getElementById("d14");
+            var d14 = document.getElementById("d15");
+            var d14 = document.getElementById("d16");
+            var d21 = document.getElementById("d21");
+            var d22 = document.getElementById("d22");
+            var d23 = document.getElementById("d23");
+            var d24 = document.getElementById("d24");
+            var d26 = document.getElementById("d26");
+            var d31 = document.getElementById("d31");
+            var d32 = document.getElementById("d32");
+            var d33 = document.getElementById("d33");
+            var d34 = document.getElementById("d34");
+            var d35 = document.getElementById("d35");
+            var d36 = document.getElementById("d36");
+            var d41 = document.getElementById("d41");
+            var d42 = document.getElementById("d42");
+            var d43 = document.getElementById("d43");
+            var d44 = document.getElementById("d44");
+            var d45 = document.getElementById("d45");
+            var d46 = document.getElementById("d46");
+            var d51 = document.getElementById("d51");
+            var d52 = document.getElementById("d52");
+            var d53 = document.getElementById("d53");
+            var d54 = document.getElementById("d54");
+            var d55 = document.getElementById("d55");
+            var d56 = document.getElementById("d56");
+            var rowData = {
+                class1: class1.value,
+                no: no.value,
+                name: name.value,
+                d11: d11.value,
+                d12: d12.value,
+                d13: d13.value,
+                d14: d14.value,
+                d15: d15.value,
+                d16: d16.value,
+                d21: d21.value,
+                d22: d22.value,
+                d23: d23.value,
+                d24: d24.value,
+                d25: d25.value,
+                d26: d26.value,
+                d31: d31.value,
+                d32: d32.value,
+                d33: d33.value,
+                d34: d34.value,
+                d35: d35.value,
+                d36: d36.value,
+                d41: d41.value,
+                d42: d42.value,
+                d43: d43.value,
+                d44: d44.value,
+                d45: d45.value,
+                d46: d46.value,
+                d51: d51.value,
+                d52: d52.value,
+                d53: d53.value,
+                d54: d54.value,
+                d55: d55.value,
+                d56: d56.value,
+
+            };
+
+            // 上傳資料
+            google.script.run.addData(rowData);
+            // 清除表單上的資料
+            document.getElementById("myForm").reset();
+            // 完成後的訊息
+            alert("謝謝您的配合，我們會儘快處理，謝謝！");
+        }
+
+        document.getElementById("submitButton").addEventListener("click", getValues);
+    </script>
+</body>
+
+</html>
